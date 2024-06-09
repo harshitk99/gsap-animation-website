@@ -81,3 +81,43 @@ gsap.from(".cards",{
     }
 })
 
+gsap.from("#content1-pg4 h1",{
+    y:300,
+    scrollTrigger:{
+        trigger:"#content2-pg4 h1",
+        scroller:"body",
+        // markers:true,
+        start:"top 80%",
+        end:"top 100%",
+        scrub:2
+    }
+})
+
+gsap.to("#content2-pg4 h1",{
+    transform:"translateX(-100%)",
+    duration:1,
+    scrollTrigger:{
+        trigger:"#content2-pg4",
+        scroller:"body",
+        scrub:2,
+        // markers:true,
+        start:"top 20%",
+        end:"top -100%",
+        pin:true,
+    }
+})
+
+gsap.from("#content2-pg4",{
+    y:-100,
+    opacity:0,
+    scrollTrigger:{
+        trigger:"#content2-pg4",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 35%",
+        markers:true,
+        scrub:1
+
+    }
+})
+

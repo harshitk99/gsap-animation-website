@@ -11,6 +11,9 @@ html,body{
     width: 100;
     background-color: rgb(152, 195, 210);
 }
+body{
+  overflow-x: hidden;
+}
 #cursor{
     height: 20px;
     width: 20px;
@@ -335,4 +338,42 @@ color: white;
 #card-right:hover #card-right{
   opacity: 0.7;
 }
+
+#page4{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+#content1-pg4{
+  height: 30%;
+  width: 100%;
+  /* background-color: blueviolet; */
+  padding: 20px;
+}
+
+#content1-pg4 h1{
+  font-size: 7em;
+}
+
+#content2-pg4{
+  height: 70%;
+  width: 100%;
+  /* background-color: cyan; */
+  display: flex;
+  align-items: center;
+
+  background-image: url(https://images.unsplash.com/photo-1717598144949-4fd6c4176116?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  position: center;
+ 
+}
+
+#content2-pg4 h1{
+  font-size: 25vw;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 10px;
+  margin-left: 300px;
+}
+
 
