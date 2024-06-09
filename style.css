@@ -53,11 +53,6 @@ html,body{
     transform: translateX(-50%);
 }
 
-#page3{
-    height: 100%;
-    width: 100%;
-    /* background-color: rgb(255, 197, 122); */
-}
 
 
 #nav{
@@ -194,3 +189,150 @@ html,body{
   color: white;
   line-height: 40px;
 }
+
+#page3{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(255, 197, 122); */
+  /* overflow-x: hidden; */
+}
+
+
+#page3-h1{
+  margin: 50px;
+  font-size: 4vw;
+  /* background-image: url(https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+#content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+    
+#left-pg3{
+  height: 100%;
+  width: 50%;
+  /* background-color: green; */
+}
+
+#right-pg3{
+  height: 100%;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+#arrow-div{
+  margin-top: 5%;
+  margin-left: 40%;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(102, 102, 102);
+  border-radius: 50%;
+  font-size: 150px;
+  font-weight: 100;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow-div:hover{
+  scale: 1.1;
+  transition: all ease 0.2s;
+}
+
+#card-left{
+  margin-left: 23%;
+  margin-top: 10%;
+  height: 80%;
+  width: 45%;
+  /* background-color: blue; */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+#card-left{
+  background-image: url(https://images.unsplash.com/photo-1717328357605-9c1c27c6c906?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  
+  background-position: center ;
+}
+
+#overlay-left{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(70, 196, 147); */
+  padding: 50px;
+  padding-top: 60px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+#overlay-left h4{
+font-size: 35px;
+color: white;
+
+}
+#overlay-left p{
+  font-size: 25px;
+  color: white;
+  margin-top: 30px;
+}
+
+
+
+
+#card-left:hover #overlay-left{
+  opacity: 1;
+}
+/* -------------------------------- */
+
+#card-right{
+  margin-left: 23%;
+  margin-top: 10%;
+  height: 60%;
+  width: 35%;
+  background-color: blue;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+#card-right{
+  background-image: url(https://images.unsplash.com/photo-1717661586324-100581bb828c?q=80&w=998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  
+  background-position: center ;
+}
+
+#overlay-right{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(70, 196, 147); */
+  padding: 50px;
+  padding-top: 60px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+#overlay-right p{
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+}
+
+
+
+
+#card-right:hover #overlay-right{
+  opacity: 1;
+}
+
+
+
+#card-right:hover #card-right{
+  opacity: 0.7;
+}
+

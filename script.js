@@ -1,16 +1,11 @@
-var crsr= document.querySelector("#cursor")
-var blur= document.querySelector("#cursor-blur")
-document.addEventListener("mousemove",function(dets){
-    crsr.style.left=dets.x+"px"
-    crsr.style.top=dets.y+"px"
-    blur.style.left=dets.x -100+"px"
-    blur.style.top=dets.y -100+"px"
-    
-    
-
-})
+// var arrow=document.querySelector("#arrow-div")
+// arrow.addEventListener("mouseover",function(){
+//     arrow.style["scale"] = "1.4";
+// })
 
 var timeline=gsap.timeline();
+
+
 
 timeline.from("#nav h2",{
     opacity:0,
@@ -56,3 +51,33 @@ gsap.to("#page2 video",{
         pin:true
     }
 })
+
+gsap.from("#page3 h1",{
+    x:-300,
+    opacity:0,
+    duration:0.5,
+    scrollTrigger:{
+        trigger:"#page3 h1",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 0",
+        // markers:true,
+        scrub:1
+    }
+})
+
+gsap.from(".cards",{
+    x:-120,
+    opacity:0,
+    duration:0.4,
+    scrollTrigger:{
+        trigger:".cards",
+        scroller:"body",
+        start:"top 15%",
+        end:"top 10",
+        // markers:true,
+        // scrub:1,
+        // pin:true
+    }
+})
+
