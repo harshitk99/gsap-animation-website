@@ -115,7 +115,7 @@ gsap.from("#content2-pg4",{
         scroller:"body",
         start:"top 80%",
         end:"top 35%",
-        markers:true,
+        // markers:true,
         scrub:1
 
     }
