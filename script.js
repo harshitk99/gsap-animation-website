@@ -93,18 +93,34 @@ gsap.from("#content1-pg4 h1",{
     }
 })
 
-gsap.to("#content2-pg4 h1",{
+gsap.to("#page4 h1",{
     transform:"translateX(-100%)",
     duration:1,
     scrollTrigger:{
-        trigger:"#content2-pg4",
+        trigger:"#page4",
         scroller:"body",
         scrub:2,
         // markers:true,
-        start:"top 20%",
+        start:"top 0",
         end:"top -100%",
         pin:true,
     }
+})
+
+gsap.to("#nav",{
+    backgroundColor: "#000302",
+    color:"hsl(0, 0%, 100%)",
+    height:"110px",
+    duration:0.5,
+    scrollTrigger:{
+        trigger:"#nav",
+        scroller:"body",
+        // markers:true,
+        start:"top -10%",
+        end:"top -11%",
+        scrub:1
+    }
+    
 })
 
 gsap.from("#content2-pg4",{
